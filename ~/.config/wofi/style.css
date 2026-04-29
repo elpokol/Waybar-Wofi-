@@ -1,0 +1,54 @@
+/* Окно wofi */
+window {
+    margin: 0px;
+    border: 1px solid #cba6f7;
+    border-radius: 16px;  /* Закруглённые углы */
+    background-color: rgba(20, 18, 28, 0.92);  /* Полупрозрачный чёрно-фиолетовый */
+    font-family: "JetBrains Mono Nerd Font", "Font Awesome 6 Free";
+    font-size: 14px;
+}
+
+/* Поле ввода */
+#entry {
+    margin: 8px;
+    padding: 8px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgba(49, 46, 68, 0.8);
+    color: #cba6f7;
+}
+
+/* Список приложений */
+#outer-box {
+    margin: 8px;
+}
+
+#scroll {
+    margin: 4px;
+}
+
+#img {
+    margin-right: 12px;
+}
+
+/* Элемент в списке */
+#entry:selected {
+    background-color: #cba6f7;
+    color: #1e1e2e;
+}
+#text:selected {
+    color: #1e1e2e;
+}
+
+/* Обычный текст */
+#text {
+    color: #cdd6f4;
+}
+
+/* Иконки */
+#img {
+    margin-right: 12px;
+}
+#text:selected {
+    color: #1e1e2e;
+}
