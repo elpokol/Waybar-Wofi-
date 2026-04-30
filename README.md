@@ -16,4 +16,4 @@ Wofi, Waybar 1
 
 Waybar 2
 
-<img width="1920" height="1080" alt="2026-04-30-050812_hyprshot" src="https://github.com/user-attachments/assets/b49aeca2-230e-47c0-8291-5359c2b71fd5" />
+<img width="1920" height="1080" alt="2026-04-30-051424_hyprshot" src="https://github.com/user-attachments/assets/4f9bc51e-d083-43d4-87c9-565cd9dc8585" />
