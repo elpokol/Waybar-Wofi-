@@ -1,0 +1,90 @@
+* {
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 13px;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+window#waybar {
+  background: rgba(15, 10, 25, 0.85);
+  border-radius: 14px;
+  color: #e0d3ff;
+
+  /* неоновый glow */
+  box-shadow: 0 0 12px rgba(170, 0, 255, 0.6);
+}
+
+/* базовые блоки */
+#window,
+#clock,
+#network,
+#pulseaudio,
+#backlight,
+#battery,
+#custom-cpu,
+#tray {
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 10px;
+  background: rgba(30, 20, 50, 0.6);
+}
+
+/* hover неон */
+#clock:hover,
+#network:hover,
+#pulseaudio:hover,
+#battery:hover,
+#custom-cpu:hover {
+  background: rgba(120, 0, 200, 0.4);
+  box-shadow: 0 0 8px rgba(180, 0, 255, 0.9);
+}
+
+/* окно */
+#window {
+  color: #cba6f7;
+  font-weight: bold;
+}
+
+/* CPU */
+#custom-cpu {
+  color: #ff79ff;
+}
+
+/* часы с градиентом */
+#clock {
+  font-size: 15px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #c084fc, #e879f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* сеть */
+#network {
+  color: #c084fc;
+}
+
+/* звук */
+#pulseaudio {
+  color: #d946ef;
+}
+
+/* яркость */
+#backlight {
+  color: #a855f7;
+}
+
+/* батарея */
+#battery {
+  color: #9333ea;
+}
+
+/* мигающая критическая батарея */
+#battery.critical {
+  color: #ff0055;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0.3; }
+}
