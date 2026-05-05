@@ -1,3 +1,5 @@
+# Hyprland Dotfiles
+
 Fonts
 
 ```sudo pacman -S ttf-font-awesome ttf-jetbrains-mono-nerd```
