@@ -1,0 +1,119 @@
+* {
+  font-family: JetBrainsMono Nerd Font, Noto Color Emoji;
+  font-size: 13px;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+window#waybar {
+  background: rgba(15, 10, 25, 0.85);
+  border-radius: 14px;
+  color: #e0d3ff;
+  box-shadow: 0 0 12px rgba(170, 0, 255, 0.6);
+}
+
+/* базовые блоки */
+#window,
+#clock,
+#network,
+#pulseaudio,
+#backlight,
+#battery,
+#custom-cpu,
+#tray,
+#custom-wayves {
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 10px;
+  background: rgba(30, 20, 50, 0.6);
+}
+
+/* hover неон */
+#clock:hover,
+#network:hover,
+#pulseaudio:hover,
+#battery:hover,
+#custom-cpu:hover,
+#custom-wayves:hover {
+  background: rgba(120, 0, 200, 0.4);
+  box-shadow: 0 0 8px rgba(180, 0, 255, 0.9);
+}
+
+/* кнопки музыки */
+#custom-music-prev,
+#custom-music-play,
+#custom-music-next {
+  color: #bb9af7;
+  background: rgba(30, 30, 46, 0.6);
+  padding: 0 10px;
+  border-radius: 10px;
+  text-shadow: 0 0 8px #bb9af7, 0 0 16px #7c5cff;
+  box-shadow: none;
+}
+
+#custom-music-prev:hover,
+#custom-music-play:hover,
+#custom-music-next:hover {
+  color: #c4a7e7;
+  background: rgba(123, 97, 255, 0.25);
+  box-shadow: 0 0 10px #7c5cff, 0 0 25px #bb9af7;
+}
+
+/* WAYVES — визуализатор аудио */
+#custom-wayves {
+  color: #bb9af7;
+  font-family: monospace;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px #7c5cff;
+  transition: all 0.1s ease;
+  min-width: 180px;
+}
+
+/* окно */
+#window {
+  color: #cba6f7;
+  font-weight: bold;
+}
+
+/* CPU */
+#custom-cpu {
+  color: #ff79ff;
+}
+
+/* часы — просто фиолетовый текст вместо градиента */
+#clock {
+  font-size: 15px;
+  font-weight: bold;
+  color: #c084fc;
+}
+
+/* сеть */
+#network {
+  color: #c084fc;
+}
+
+/* звук */
+#pulseaudio {
+  color: #d946ef;
+}
+
+/* яркость */
+#backlight {
+  color: #a855f7;
+}
+
+/* батарея */
+#battery {
+  color: #9333ea;
+}
+
+/* мигающая критическая батарея */
+#battery.critical {
+  color: #ff0055;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0.3; }
+}
